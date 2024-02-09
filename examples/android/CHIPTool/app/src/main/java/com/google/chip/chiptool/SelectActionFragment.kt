@@ -66,6 +66,7 @@ class SelectActionFragment : Fragment() {
     binding.sensorClustersBtn.setOnClickListener { handleSensorClicked() }
     binding.multiAdminClusterBtn.setOnClickListener { handleMultiAdminClicked() }
     binding.opCredClustersBtn.setOnClickListener { handleOpCredClicked() }
+    binding.opStateClustersBtn.setOnClickListener { handleOpStateClicked() }
     binding.basicClusterBtn.setOnClickListener { handleBasicClicked() }
     binding.attestationTestBtn.setOnClickListener { handleAttestationTestClicked() }
     binding.clusterInteractionBtn.setOnClickListener { handleClusterInteractionClicked() }
@@ -193,6 +194,11 @@ class SelectActionFragment : Fragment() {
   /** Notifies listener of Operational Credentials Clusters button click. */
   private fun handleOpCredClicked() {
     showFragment(OpCredClientFragment.newInstance())
+  }
+
+  /** Notifies listener of Operational State Clusters button click. */
+  private fun handleOpStateClicked() {
+    showFragment(OpStateClientFragment.newInstance())
   }
 
   /** Notifies listener of Basic Clusters button click. */

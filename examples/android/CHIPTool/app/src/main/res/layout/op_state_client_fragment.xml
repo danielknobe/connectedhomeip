@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/addressUpdateFragment"
+        android:name="com.google.chip.chiptool.clusterclient.AddressUpdateFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressUpdateFragment"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/pauseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:color/darker_gray"
+            android:text="@string/op_state_send_command_pause_btn_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/darker_gray"
+            android:text="@string/op_state_send_command_stop_btn_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@android:color/darker_gray"
+            android:text="@string/op_state_send_command_start_btn_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/resumeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/op_state_send_command_resume_btn_text"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/readOpStateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:text="@string/op_state_client_read_current_op_state_btn_text"
+            android:textSize="16sp"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/commandStatusTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGrid"
+        android:padding="16dp"
+        android:minLines="4"
+        android:singleLine="false"
+        android:textSize="20sp" />
+
+</RelativeLayout>

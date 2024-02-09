@@ -116,6 +116,13 @@
     <string name="op_cred_client_remove_fabrics_btn_text">Remove Fabrics</string>
     <string name="op_cred_client_fabric_index_hint_text">FabricIndex</string>
 
+    <string name="op_state_client_btn_text">Operational State cluster</string>
+    <string name="op_state_send_command_pause_btn_text">Pause</string>
+    <string name="op_state_send_command_stop_btn_text">Stop</string>
+    <string name="op_state_send_command_start_btn_text">Start</string>
+    <string name="op_state_send_command_resume_btn_text">Resume</string>
+    <string name="op_state_client_read_current_op_state_btn_text">Read OpState</string>
+
     <string name="basic_cluster_btn_text">Basic cluster</string>
     <string name="basic_cluster_write_btn_text">Write</string>
     <string name="basic_cluster_write_user_label_hint_text">Enter User Label</string>
